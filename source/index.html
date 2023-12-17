@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo4.png" alt="logo">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="sample 1.html">About</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" name="" id="text" placeholder="write here....">
+            <button class="btn">Search</button>
+        </div>
+    </div>
+    <h1>Urdu News HUB</h1>
+    <div id="about">
+        <div id="description">
+            <p style="margin-top: 0;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus debitis
+                inventore perferendis magnam reiciendis sed tempore eum optio. Aut eum
+                earum maiores porro quis neque <b>30,000</b> aperiam nisi amet repudiandae
+                non! Iusto, magnam ratione harum molestias natus, excepturi delectus
+                deserunt eius nihil sint quod magni a eaque vero eveniet quos esse libero
+                corrupti cum eos quae sunt nesciunt sed! Harum, similique.
+            </p>
+
+            <p>
+                We offered two industry focused bootcamps:
+            <ol>
+                <li>
+                    <a href="https://www.fullstackacademy.com/" target="_blank">Urdu News Hub full stack development
+                        course</a>
+                </li>
+                <li>
+                    <a href="https://www.urdupoint.com/" target="_blank">Urdu News Hub data science course</a>
+                </li>
+            </ol>
+
+            </p>
+        </div>
+        <div id="team">
+            <img id="team-image" src="team.jpeg" alt="team">
+        </div>
+    </div>
+    <h2>Job Opportunities</h2>
+    <div id="jobs">
+        <table id="jobs-table">
+            <tr class="jobs-header-row">
+                <th rowspan="2">Job Title</th>
+                <th colspan="2">Location</th>
+                <th rowspan="2">Salary</th>
+                <th rowspan="2">Posted On</th>
+            </tr>
+            <tr class="jobs-header-row">
+                <th>City</th>
+                <th>Country</th>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Frontend Developer</td>
+                <td>Karachi</td>
+                <td>Pakistan</td>
+                <td>Pkr 50,000</td>
+                <td>Jan 18, 2022</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Full Stack Developer</td>
+                <td>Lahore</td>
+                <td>Pakistan</td>
+                <td>Pkr 100,000</td>
+                <td>Apr 28, 2022</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Backend Developer</td>
+                <td>Islamabad</td>
+                <td>Pakistan</td>
+                <td>Pkr 80,000</td>
+                <td>Mar 8, 2023</td>
+            </tr>
+            <tr class="jobs-data-row">
+                <td>Data Scientist</td>
+                <td colspan="2">Remote</td>
+                <td>Pkr 80,000</td>
+                <td>Mar 8, 2023</td>
+            </tr>
+        </table>
+    </div>
+    <div id="application">
+        <h2>Submit Your Application Here</h2>
+        <form action="process-form.php" method="post" id="application-form">
+            <div class="form-group">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required placeholder="Mark Sehgal">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required placeholder="mark@example.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="+923331234567">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Borth</label><br>
+                <input type="datetime-local" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="resume">Upload File</label><br>
+                <input type="file" id="resume" name="resume" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Position Applied for</label><br>
+                <select name="Position Applied" id="position">
+                    <option value="">Select the Position</option>
+                    <option value="frontend developer">Frontend Developer</option>
+                    <option value="full stack developer ">Full Stack Developer</option>
+                    <option value="data scientist">Data Scientist</option>
+                    <option value="seo expert">SEO Expert</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cover letter">Cover Letter</label><br>
+                <textarea name="cover letter" id="cover letter" rows="5" placeholder="Write here what do you want"
+                    required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    I agree with the terms and conditions
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+
+    </div>
+    <div id="footer">
+        <ul id="footer-links">
+            <li><a href="https://www.coursera.org/courses" target="_blank">Courses</a></li>
+            <li><a href="https://www.searchenginejournal.com/examples-contact-us-pages/378518/" target="_blank">Contact
+                    Us</a></li>
+            <li><a href="https://www.investopedia.com/terms/s/social-media.asp" target="_blank">Social Media</a> </li>
+        </ul>
+        <div class="copyright">&#169 2023 copyright Urdu News Hub</div>
+    </div>
+</body>
+
+</html>
